@@ -1,17 +1,33 @@
-<doc!type html>
+<!DOCTYPE htlm>
 <html lang=en>
 <head>
 <meta charset="utf-8">
-<title>Help me choose</title>
+ <title>Help me choose</title>
+ <link href="./main.css" rel="stylesheet" type="text/css">
+ <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 </head>
 <body>
-  <h1>Help me coose between..</h1>
-  <div>
-    <div>
-  <input placeholder="Something"></input>
-</div>
-<button>Add</button>
-</div>
-<button>Go !</button>  
+  <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/98173-200.png"/>
+  <h1>Help me choose restaurant</h1>
+  <div class="inputSection">
+    <div class="inputs">
+     <input placeholder="write city"></input>
+   </div>
+   <button class="addOption">Add</button>
+ </div>
+ <div class="resultSection"></div>
+ <button>Go !</button>
+
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ <script>
+ $(function functionName() {
+   $('.resultSection').hide()
+
+   var add_option = function(){
+     $('.inputs').append('<input></input>')
+   }
+   $('.addOption').click(add_option)
+ })
+ </script>
 </body>
 </html>
